@@ -20,6 +20,19 @@ To remove/uninstall a hugo theme, i.e. the `ananke` theme:
 git submodule deinit -f -- themes/ananke
 ```
 
+### Run hugo server
+
+```shell
+cd <hugo-site-dir>
+hugo server
+```
+
+#### Specify host and/or port
+
+```shell
+hugo server --bind 0.0.0.0 --port 8000
+```
+
 ## Links
 
 - [Hugo homepage](https://gohugo.io)
