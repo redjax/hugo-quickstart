@@ -14,7 +14,7 @@ LATEST_VERSION=$(curl -s https://api.github.com/repos/gohugoio/hugo/releases/lat
 VERSION_NO_PREFIX=${LATEST_VERSION#v}
 
 ## Define the correct download URL (v prefix in the tag path, but not in the filename)
-DOWNLOAD_URL="https://github.com/gohugoio/hugo/releases/download/${LATEST_VERSION}/hugo_${VERSION_NO_PREFIX}_Linux-64bit.tar.gz"
+DOWNLOAD_URL="https://github.com/gohugoio/hugo/releases/download/${LATEST_VERSION}/hugo_extended_${VERSION_NO_PREFIX}_Linux-64bit.tar.gz"
 
 ## Check if the URL is valid
 if curl --output /dev/null --silent --head --fail "$DOWNLOAD_URL"; then

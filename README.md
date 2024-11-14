@@ -33,6 +33,22 @@ hugo server
 hugo server --bind 0.0.0.0 --port 8000
 ```
 
+#### Auto-load most recently changed page
+
+```shell
+hugo server --navigateToChanged
+```
+
+### Build Hugo server from a different path
+
+If your `$CWD` is in a path other than the Hugo site, you can specify the path with `-s`:
+
+```shell
+hugo -s path/to/hugo/site
+```
+
+The `public/` directory will be created within the Hugo project regardless of where your terminal session is.
+
 ## Links
 
 - [Hugo homepage](https://gohugo.io)
