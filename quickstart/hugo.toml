@@ -2,6 +2,8 @@ baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'Hugo Quickstart'
 theme = "ananke"
+## Show pages in content/ as nav items
+sectionPagesMenu = "main"
 [params]
     subtitle = "Following the Hugo documentation's quickstart guide"
     [params.contact]
