@@ -1,3 +1,4 @@
+ARG HUGO_SITE_DIR=./site
 FROM golang:latest AS build
 
 ## Install Hugo from GitHub
@@ -6,9 +7,11 @@ WORKDIR /hugo
 RUN go install --tags extended
 
 FROM build AS stage
+ARG HUGO_SITE_DIR
+
 ## Copy your Hugo site into the container
 WORKDIR /site
-COPY ./quickstart .
+COPY ${HUGO_SITE_DIR} .
 
 ## Build the Hugo site
 RUN hugo --destination /public
