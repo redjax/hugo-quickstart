@@ -61,3 +61,4 @@ The `public/` directory will be created within the Hugo project regardless of wh
 
 - [Hugo homepage](https://gohugo.io)
 - [Hugo Github](https://github.com/gohugoio/hugo)
+- [Hugo Themes](https://themes.gohugo.io)
