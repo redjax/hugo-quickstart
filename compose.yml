@@ -1,0 +1,12 @@
+---
+services:
+  hugo:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: serve
+    container_name: ${HUGO_CONTAINER_NAME:-hugo-site}
+    ports:
+      - ${HUGO_HTTP_PORT:-80}:80
+    volumes:
+      - ${HUGO_SRC_DIR:-$$PWD}:/src
