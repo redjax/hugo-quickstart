@@ -2,3 +2,8 @@ baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 theme = "ananke"
+[params]
+    subtitle = "Following the Hugo documentation's quickstart guide"
+    [params.contact]
+    email = "dont@me.dude"
+    phone = "+1 000-000-0000"
