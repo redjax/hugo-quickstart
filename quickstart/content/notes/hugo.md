@@ -1,5 +1,4 @@
 +++
-date = "2024-11-15T21:08:00"
 draft = false
 title = "Hugo Notes"
 keywords = ["demo", "notes"]
