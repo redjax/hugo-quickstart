@@ -1,0 +1,15 @@
+---
+services:
+  hugo:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: dev
+      args:
+        HUGO_SITE_DIR: ./quickstart
+    container_name: ${HUGO_CONTAINER_NAME:-hugo-site}-dev
+    # command: ["hugo", "serve", "--bind", "0.0.0.0", "--port", "1313"]
+    ports:
+      - ${HUGO_HTTP_PORT:-1313}:1313
+    volumes:
+      - ${HUGO_SRC_DIR:-./quickstart}:/site

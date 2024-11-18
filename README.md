@@ -4,6 +4,14 @@ Tech blogging site built with [Hugo](https://gohugo.io).
 
 ## Notes
 
+### Creating a new site
+
+Create a new site. Default configuration type is `toml`; set a different config file type wwith `-f`.
+
+```shell
+hugo new site <site-name> [-f {toml, yml}]
+```
+
 ### Adding a theme
 
 To add themes to hugo, add the theme repository as a submodule. For example, to add the `ananke` theme:
@@ -53,3 +61,4 @@ The `public/` directory will be created within the Hugo project regardless of wh
 
 - [Hugo homepage](https://gohugo.io)
 - [Hugo Github](https://github.com/gohugoio/hugo)
+- [Hugo Themes](https://themes.gohugo.io)
