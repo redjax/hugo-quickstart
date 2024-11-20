@@ -4,3 +4,21 @@
 [submodule "quickstart/themes/ananke"]
 	path = quickstart/themes/ananke
 	url = https://github.com/theNewDynamic/gohugo-theme-ananke.git
+[submodule "quickstart/themes/PaperMod"]
+	path = quickstart/themes/PaperMod
+	url = https://github.com/adityatelange/hugo-PaperMod
+[submodule "quickstart/themes/stack"]
+	path = quickstart/themes/stack
+	url = https://github.com/CaiJimmy/hugo-theme-stack.git
+[submodule "quickstart/themes/m10c"]
+	path = quickstart/themes/m10c
+	url = https://github.com/vaga/hugo-theme-m10c.git
+[submodule "quickstart/themes/hextra"]
+	path = quickstart/themes/hextra
+	url = https://github.com/imfing/hextra.git
+[submodule "quickstart/themes/tile"]
+	path = quickstart/themes/tile
+	url = https://github.com/michenriksen/hugo-theme-til.git
+[submodule "quickstart/themes/til"]
+	path = quickstart/themes/til
+	url = https://github.com/michenriksen/hugo-theme-til.git
