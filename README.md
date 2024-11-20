@@ -84,6 +84,9 @@ Error: `fatal: 'quickstart/themes/til' already exists in the index`
 - If this doesn't fix it, try running: `git rm -r --cached <theme-name>`
 - If you see an error `fatal: please stage your changes to .gitmodules or stash them to proceed`, make sure to `git add .gitmodules` to commit your changes.
 - If you are still seeing errors, or get a `fatal` error trying to re-add the repository, edit `.git/config`, search for `submodule "<theme-name>"`, and remove any references you find.
+- If you're still getting errors look in the `.git` folder at the root of the repository
+  - Check for theme in `.git/config`
+  - Check for theme in `.git/modules/<module-name>`
 
 ## Links
 
