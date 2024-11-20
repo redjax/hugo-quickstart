@@ -20,6 +20,12 @@ To add themes to hugo, add the theme repository as a submodule. For example, to 
 git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke
 ```
 
+### Updating all themes
+
+```shell
+hugo mod get -u [github.com/user/theme-name]
+```
+
 ### Removing a theme
 
 To remove/uninstall a hugo theme, i.e. the `ananke` theme:
@@ -56,6 +62,27 @@ hugo -s path/to/hugo/site
 ```
 
 The `public/` directory will be created within the Hugo project regardless of where your terminal session is.
+
+
+## Fixes
+
+### Theme 'already exists in the index'
+
+This often happens when installing, removing, then attempting to reinstall a theme with `git submodule add ...`.
+
+Error: `fatal: 'quickstart/themes/til' already exists in the index`
+
+**Fixes**
+
+- Remove the theme, i.e. `rm -r <hugo-site>/themes/theme-name`
+- If the theme you just removed was the theme you set in your config, change it to something else
+- Run `git submodule deinit -f -- themes/theme-name`
+- Search for references to the theme: `git ls-files --stage <theme-name>`
+  - If you see output, like `160000 d00cf29f23627fc54eb992dde6a79112677cd86c 0   <theme-name>`, it means the repository was already added as a "gitlink."
+  - Run `git submodule` to see if you see it there
+  - Remove the theme from the cache with `git rm --cached <theme-name>`
+- If this doesn't fix it, try running: `git rm -r --cached <theme-name>`
+- If you see an error `fatal: please stage your changes to .gitmodules or stash them to proceed`, make sure to `git add .gitmodules` to commit your changes.
 
 ## Links
 

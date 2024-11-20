@@ -1,9 +1,9 @@
-+++
-draft = false
-title = "Notes"
-keywords = ["demo", "notes"]
-+++
-
-## Notes
+---
+draft: false
+keywords:
+- demo
+- notes
+title: Notes
+---
 
 An example collection for notes.

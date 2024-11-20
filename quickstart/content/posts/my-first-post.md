@@ -1,8 +1,10 @@
-+++
-draft = false
-title = 'My First Post'
-keywords = ["demo", "test"]
-+++
+---
+draft: false
+keywords:
+- demo
+- test
+title: My First Post
+---
 
 ## Introduction
 

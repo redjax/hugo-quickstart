@@ -1,11 +1,59 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
 title = 'Hugo Quickstart'
-theme = "ananke"
+theme = "stack"
+author = "redjax"
+languageCode = 'en-us'
+DefaultContentLanguage = "en"
+enableInlineShortcodes = true
+
+relativeURLs = true
+baseURL = 'http://0.0.0.0:8004/'
+
 ## Show pages in content/ as nav items
 sectionPagesMenu = "main"
+copyright = "redjax and the Hugo Authors; all rights reserved."
+
+pager.paperSize = 4
+
 [params]
-    subtitle = "Following the Hugo documentation's quickstart guide"
+description = "Learning how to build a site with Hugo."
+
     [params.contact]
-    email = "dont@me.dude"
-    phone = "+1 000-000-0000"
+    email = "no@none.com"
+    # phone = "555-555-5555"
+
+    [[params.social]]
+    icon = "github"
+    name = "Github"
+    url = "https://github.com/redjax"
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
+[privacy]
+
+    [privacy.vimeo]
+        disabled = false
+        simple = true
+    
+    [privacy.twitter]
+        disabled = false
+        enableDNT = true
+        simple = true
+
+    [privacy.instagram]
+        disabled = false
+        simple = true
+
+    [privacy.youtube]
+        disabled = false
+        privacyEnhanced = true
+
+[services]
+
+    [services.instagram]
+        disableInlineCSS = true
+
+    [services.twitter]
+        disableInlineCSS = true
