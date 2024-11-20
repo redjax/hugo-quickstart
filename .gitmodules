@@ -13,3 +13,4 @@
 [submodule "quickstart/themes/hextra"]
 	path = quickstart/themes/hextra
 	url = https://github.com/imfing/hextra.git
+
